@@ -98,7 +98,8 @@ function printHelp() {
       -r, --reprocess Images for which a -min version already exists will
                       be skipped. To force reprocessing these images, pass
                       the --reprocess option.
-      -f, --fix       After processing, runs sed to update images
+      -f, --fix       After processing, runs 'sed' to update existing links
+                      to unoptimized images in place.
       -h, --help      Show this help message and exit.
     `);
 }
