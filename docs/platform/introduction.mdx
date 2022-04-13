@@ -1,0 +1,151 @@
+---
+id: introduction
+title: Introduction to Memfault
+sidebar_label: Introduction
+---
+
+import { AiFillAndroid, BiChip } from "react-icons/all";
+
+Welcome to the Introduction to Memfault page. After reading this, you should
+have familiarized yourself with the different features Memfault offers and how
+you can use it to ship hardware products at the speed of software.
+
+Memfault is a cloud platform that allows you and your team to continuously
+monitor devices, debug firmware issues, and deploy OTA updates to your fleet.
+
+Some facts about Memfault:
+
+- Memfault is **embedded-first**: embedded systems and devices running on any
+  RTOS or operating systems such as Android or Linux are supported.
+- It **runs on any device**: from powerful SoCs down to MCUs with the most
+  constrained capabilities, Memfault will fit snugly into your device.
+- Our SDKs are made with **low and intermittent connectivity** in mind: if your
+  device can only send out a small amount of data, you'll be able to ration it
+  in chunks of the size you choose, and we'll take care of transporting it for
+  you. If your device relies on a companion (such as a mobile phone) for
+  Internet access, you can use it as a bridge. Granted, you can also post data
+  directly from your device.
+- **Privacy** is built into Memfault: you have full control over what your
+  Memfault-enabled devices send to our servers.
+
+Our platform is a **one-stop shop** for all the needs of your product. We
+provide:
+
+- Post-mortem debugging.
+- Over-the-air (OTA) updates.
+- Monitoring via metrics.
+
+## Post-Mortem Debugging
+
+Memfault keeps track of crashes automatically and will make traces available to
+you on the Memfault dashboard as soon as they're uploaded.
+
+Our web application offers a rich and complete view into your collected traces.
+With them, there's no need to attach a debugger to the device, which would
+require shipping it to your facility. Even if you have the device at hand,
+you'll find Memfault traces to be a better place to debug, thanks to the myriad
+of helpful visualizations and connected data we display from our parsing. You'll
+find Memfault traces are useful to you even during development.
+
+Reproducing customer issues is easier than ever before. Consider a workflow
+where a customer support agent files a ticket for engineering that already
+includes a Memfault link to the particular device that's having issues, or even
+a link to the trace itself.
+
+<figure>
+  <img src="https://via.placeholder.com/980x500" alt="" />
+  <figcaption>
+    Placeholder caption. See{" "}
+    <a href="https://memfault.slack.com/archives/CFRE25ZF0/p1649874777413489">
+      this Slack thread
+    </a>{" "}
+    if you want to help.
+  </figcaption>
+</figure>
+
+Memfault traces go through a process of deduplication, so that you don't have to
+look at every single instance of a problem. A group of collected traces with the
+same backtrace is called an Issue in Memfault. Even after deduplication, you can
+still access all available traces of an Issue.
+
+To learn more about post-mortem debugging and set it up for your project,
+continue on to:
+
+<ul style={{ listStyle: "none", paddingLeft: 0 }}>
+  <li>
+    <a href="/docs/mcu/coredumps">
+      <BiChip /> Coredump Collection for MCU Devices
+    </a>
+  </li>
+  <li>
+    <a href="/docs/android/android-bort/#memfault-caliper">
+      <AiFillAndroid /> Trace Collection for Android Devices
+    </a>
+  </li>
+</ul>
+
+## Over-the-Air (OTA) Updates
+
+Memfault changes the way teams prepare updates. Instead of handing a pilot
+device over to QA and waiting for bugs to be found, to then fix them and repeat
+the process, consider the following workflow:
+
+- Using Memfault Cohorts, split your devices into a production Cohort and a beta
+  Cohort.
+- Configure an automatic update for devices in the beta Cohort.
+- Begin collecting crash reports and metrics from beta.
+- Once your software is ready, enable the update for all production devices.
+
+Memfault OTA updates enable this streamlined workflow as well as complex setups
+that may include staged rollouts, delta releases (also known as incremental
+updates), and many more representable scenarios.
+
+OTA updates provide increased velocity, reduce the risk of rolling out an
+update, and offer visibility into team productivity.
+
+<figure>
+  <img src="https://via.placeholder.com/980x500" alt="" />
+  <figcaption>
+    Placeholder caption: software version distribution chart and/or the Version
+    Matrix.
+  </figcaption>
+</figure>
+
+To benefit from the increased velocity while still maintaining the high
+standards of quality required by the nature of hardware products, use the rest
+of the Memfault feature suite: Post-Mortem Debugging and Metrics.
+
+To learn more about OTA updates and set up your project to use them, continue on
+to [documentation on OTA updates](/docs/platform/ota).
+
+## Monitoring via Metrics
+
+Memfault makes it extremely easy to collect new data from your devices. In any
+of our SDKs, it's a matter of writing two lines of C or Kotlin. Since Memfault
+takes care of the plumbing and the multipart transport, adding a new metric does
+not involve data scientists, your web backend team, or your mobile app
+developers.
+
+Adding metrics to your Memfault integration unlocks many features whose value
+compounds with all other features of Memfault:
+
+- Device Attributes and time-series data.
+- A timeline view for every single device showcasing its metrics, including
+  time-series data, reboots and crashes.
+- Custom Metric charts that aggregate the value of your metrics across your
+  fleet, sliced by Cohort or Software Version.
+- Email alerts based on your own configured thresholds.
+- A rich device search view that allows you to express the most complex queries.
+- Device Sets: a way to visualize the change in the count resulting from device
+  searches over time.
+
+<figure>
+  <img src="https://via.placeholder.com/980x500" alt="" />
+  <figcaption>
+    Placeholder caption: possible multiple images of the device timeline and the
+    overview and custom metric charts.
+  </figcaption>
+</figure>
+
+To learn more about monitoring using Metrics, continue on to
+[documentation on Metrics and Attributes](/docs/platform/metrics/).
