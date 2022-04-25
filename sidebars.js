@@ -137,7 +137,10 @@ module.exports = {
         {
             label: "Troubleshooting",
             type: "category",
-            link: { type: "doc", id: "troubleshooting/uploading-symbol-file-is-invalid" },
+            link: {
+                type: "doc",
+                id: "troubleshooting/uploading-symbol-file-is-invalid",
+            },
             items: ["troubleshooting/uploading-symbol-file-is-invalid"],
         },
     ],
