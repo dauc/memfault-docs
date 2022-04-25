@@ -10,7 +10,7 @@ module.exports = {
         {
             type: "category",
             label: "Web Application",
-            link: { type: "generated-index" },
+            link: { type: "doc", id: "platform/projects-and-fleets" },
             items: [
                 "platform/memfault-terminology",
                 "platform/projects-and-fleets",
@@ -31,7 +31,7 @@ module.exports = {
         },
         {
             type: "category",
-            link: { type: "generated-index" },
+            link: { type: "doc", id: "mcu/introduction" },
             label: "MCU Guides",
             items: [
                 "mcu/introduction",
@@ -100,7 +100,7 @@ module.exports = {
         {
             label: "Android Guides",
             type: "category",
-            link: { type: "generated-index" },
+            link: { type: "doc", id: "android/introduction" },
             items: [
                 "android/introduction",
                 "android/android-getting-started-guide",
@@ -118,7 +118,7 @@ module.exports = {
         {
             label: "Linux Guides",
             type: "category",
-            link: { type: "generated-index" },
+            link: { type: "doc", id: "linux/introduction" },
             items: [
                 "linux/introduction",
                 "linux/linux-releases-integration-guide",
@@ -137,7 +137,7 @@ module.exports = {
         {
             label: "Troubleshooting",
             type: "category",
-            link: { type: "generated-index" },
+            link: { type: "doc", id: "troubleshooting/uploading-symbol-file-is-invalid" },
             items: ["troubleshooting/uploading-symbol-file-is-invalid"],
         },
     ],
