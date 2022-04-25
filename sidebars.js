@@ -24,10 +24,10 @@ module.exports = {
                 "platform/metrics",
                 "platform/charts",
                 "platform/alerts",
-                "platform/rate-limiting"
+                "platform/rate-limiting",
                 /* "platform/bulk-device-upload", */
                 /* Mentions features to be released: "platform/sso", */
-            ]
+            ],
         },
         {
             type: "category",
@@ -45,8 +45,8 @@ module.exports = {
                         "mcu/pinnacle-100-guide",
                         "mcu/esp32-guide",
                         "mcu/esp8266-rtos-sdk-guide",
-                        "mcu/da1469x-sdk-guide"
-                    ]
+                        "mcu/da1469x-sdk-guide",
+                    ],
                 },
                 {
                     type: "category",
@@ -62,8 +62,8 @@ module.exports = {
                         "mcu/releases-integration-guide",
                         "mcu/symbol-file-build-ids",
                         "mcu/heap-stats",
-                        "mcu/rtos-analysis"
-                    ]
+                        "mcu/rtos-analysis",
+                    ],
                 },
                 {
                     type: "category",
@@ -72,8 +72,8 @@ module.exports = {
                     items: [
                         "mcu/coredump-elf-with-gdb",
                         "mcu/uploading-data-with-mqtt",
-                        "mcu/sdk-submodule"
-                    ]
+                        "mcu/sdk-submodule",
+                    ],
                 },
                 {
                     type: "category",
@@ -81,8 +81,8 @@ module.exports = {
                     label: "Design Docs",
                     items: [
                         "mcu/data-from-firmware-to-the-cloud",
-                        "mcu/event-serialization-overview"
-                    ]
+                        "mcu/event-serialization-overview",
+                    ],
                 },
                 {
                     type: "category",
@@ -92,10 +92,10 @@ module.exports = {
                         "mcu/test-patterns-for-chunks-endpoint",
                         "mcu/test-data-collection-with-gdb",
                         "mcu/export-chunks-over-console",
-                        "mcu/demo-cli"
-                    ]
-                }
-            ]
+                        "mcu/demo-cli",
+                    ],
+                },
+            ],
         },
         {
             label: "Android Guides",
@@ -112,8 +112,8 @@ module.exports = {
                 "android/android-custom-metrics",
                 "android/android-releases-integration-guide",
                 "android/android-ota-update-client",
-                "android/android-data-scrubbing"
-            ]
+                "android/android-data-scrubbing",
+            ],
         },
         {
             label: "Linux Guides",
@@ -121,8 +121,8 @@ module.exports = {
             link: { type: "generated-index" },
             items: [
                 "linux/introduction",
-                "linux/linux-releases-integration-guide"
-            ]
+                "linux/linux-releases-integration-guide",
+            ],
         },
         {
             label: "Automation, CI & CD",
@@ -131,15 +131,14 @@ module.exports = {
             items: [
                 "ci/authentication",
                 "ci/install-memfault-cli",
-                "ci/add-device-to-cohort-api"
-            ]
+                "ci/add-device-to-cohort-api",
+            ],
         },
         {
             label: "Troubleshooting",
             type: "category",
             link: { type: "generated-index" },
-            items: ["troubleshooting/uploading-symbol-file-is-invalid"]
-        }
-    ]
+            items: ["troubleshooting/uploading-symbol-file-is-invalid"],
+        },
+    ],
 };
-
